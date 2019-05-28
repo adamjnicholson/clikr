@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+
+.black-bg {
+  background-color: black
+}
+
+.red-bg {
+  background-color: red
+}
+
+.green-bg {
+  background-color: lightgreen;
+}
+
+.App {
+  display: flex;
+  height: 100vh;
+}
+
+.Controls {
+  height: 100vh;
+  padding: 2rem 0;
+  width: 100%;
+  max-width: 400px;
+  background-color: lightgray;
+}
+
+.PanelRow {
+  padding: 2rem 1.5rem;
+  border-bottom: 1px solid gray;
+}
+
+.PanelRow label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.DotColour {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  box-shadow: 3px 2px 4px 0px #00000047;
+  border: none;
+  padding: 0;
+  transition: all .3s ease-out;
+}
+
+.DotColour:hover {
+  transform: scale(1.1)
+}
+
+.DotColour + .DotColour {
+  margin-left: .5rem;
+}
+
+.DotColour.selected {
+  border: 2px solid white;
+  transform: scale(1.15);
+}
+
+.DotClick {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
